@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVT Sample Site Using Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11">
+                <!-- NAVBAR START -->
+                <nav class="navbar navbar-light navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand" href="#Home">
+                            <img src="https://static.wixstatic.com/media/a3420a_1f4750710ed14cabac8f364579a7471d~mv2.png/v1/fill/w_286,h_161,al_c,usm_0.66_1.00_0.01,enc_auto/bay%20valley%20tech%20logo.png"
+                                alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-center" id="navbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#Home" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#About" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#Programs" class="nav-link">Our Programs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#News" class="nav-link">In The News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#Contact" class="nav-link">Contact Us</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav sm-icons">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                        </svg></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- NAVBAR END -->
+                <!-- CAROUSEL START -->
+                <div id="imageGallery" class="carousel slide mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://static.wixstatic.com/media/a3420a_b960dcae04de463c89e0bcf94f61910d~mv2.jpg/v1/fill/w_975,h_548,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3420a_b960dcae04de463c89e0bcf94f61910d~mv2.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.wixstatic.com/media/a3420a_f5fc3af2fe794f469b902b3df7029eb6~mv2.jpg/v1/fill/w_1038,h_584,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3420a_f5fc3af2fe794f469b902b3df7029eb6~mv2.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.wixstatic.com/media/a3420a_03b1d87936674e7f851e58ce4b82b76e~mv2.jpg/v1/fill/w_1038,h_584,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3420a_03b1d87936674e7f851e58ce4b82b76e~mv2.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.wixstatic.com/media/a3420a_913e7bac7eab4259a22ac0c8330eac6e~mv2.jpg/v1/fill/w_1038,h_584,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3420a_913e7bac7eab4259a22ac0c8330eac6e~mv2.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageGallery"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageGallery"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- CAROUSEL END -->
+                <!-- CONTENT SECTION 1 -->
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h3 class="display-6 mb-5">Start Your High Tech Career Today with Our Free Code Academy</h3>
+                        <p>If you can dream it, you can achieve it! Bay Valley Tech offers free and low-cost coding
+                            programs for students seeking life-changing careers in software development. </p>
+                        <p>Our coding school focuses on teaching in-demand web development skills including HTML/CSS,
+                            Bootstrap, JavaScript and Node.js. Not only will our coding classes prepare you for a new
+                            career, we'll also put you in touch with tech leaders and provide internship opportunities.
+                        </p>
+                        <h3 class="display-6 mb-5">Why Is Bay Valley Tech A Great Place to Launch Your Tech Career?</h3>
+                        <p>Bay Valley Tech is much more than an online coding school. Unlike other coding and technical
+                            schools, Bay Valley Tech leverages a unique community-based training strategy. Our school is
+                            also built inside a tech community full of supportive professional programmers, instructors,
+                            mentors, classmates and alumni. </p>
+                        <p>Bay Valley Tech is a great place to learn how to code for free, but it is an even more
+                            amazing place to build the connections necessary to land your next paid software internship
+                            or web development job.
+                        </p>
+
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center">
+                        <img src="https://static.wixstatic.com/media/3fd644_8a52c9b0db0b4cefa1d6813aea25121f~mv2.jpg/v1/fill/w_421,h_616,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/BVT---Students-Stock-Photo-4.jpg"
+                            alt="" class="img-fluid">
+                    </div>
+                </div>
+                <!-- END OF CONTENT SECTION 1 -->
+                <!-- BLACK PAGE BREAK START -->
+                <div class="bg-dark text-white text-center p-4" id="pageBreak">
+                    <h2 class="display-6">WHAT DOES BAY VALLEY TECH OFFER ITS STUDENTS?</h2>
+                </div>
+                <!-- BLACK PAGE BREAK END -->
+                <!-- CONTENT SECTION 2 START -->
+                <div id="contentSection2">
+                    <h3 class="display-6 mb-5">Free Code Academy Program</h3>
+                    <p>Our free online code academy is a 7-month part-time program that combines weekly live online
+                        classes
+                        with self-paced online lessons. Students will need to be accepted into our coding school through
+                        an
+                        application. Our simple application process:</p>
+                    <ol>
+                        <li>Fill out the online application</li>
+                        <li>Complete the pre-study lessons in the welcome email</li>
+                        <li>Schedule a phone interview with the Bay Valley Tech admissions committee</li>
+                        <li>Select a cohort meeting time that fits your schedule</li>
+                    </ol>
+                    <button type="button" class="btn btn-secondary btn-lg text-black px-4 rounded-pill my-button">
+                        <h4>Apply Now</h4>
+                    </button>
+                    <h3 class="display-6 mb-5">Accelerator Coaching Program</h3>
+                    <p>Our unique coaching program is built specifically to get students into the workforce faster. The
+                        Accelerator Program is open to Bay Valley Tech code academy students as well as others studying
+                        web
+                        development independently. For only $300 per month, students get daily access to:</p>
+                    <ol>
+                        <li>Code Reviews</li>
+                        <li>Office Hours</li>
+                        <li>Study Groups</li>
+                        <li>Group Project Teams</li>
+                        <li>Interview Prep</li>
+                        <li>Additional exposure to hiring managers</li>
+                    </ol>
+
+                    <p>
+                        Bay Valley Tech offers free and low-cost coding programs for students focused on web-based
+                        development languages ranging from HTML / CSS to javascript and more. We strive to help our
+                        students
+                        acquire adequate knowledge and skills to enter the tech industry hassle-free and land rewarding
+                        careers in an industry with ever-growing demand.</p>
+                    <button type="button" class="btn btn-secondary btn-lg text-black px-4 rounded-pill my-button">
+                        <h4>Apply Now</h4>
+                    </button>
+                </div>
+                <!-- CONTENT SECTION 2 END -->
+                <!-- BLACK PAGE BREAK START -->
+                <div class="bg-dark text-white text-center p-4" id="pageBreak">
+                    <h2 class="display-6">About Bay Valley Tech</h2>
+                </div>
+                <!-- BLACK PAGE BREAK END -->
+                <!-- CONTENT SECTION 3 START -->
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="https://static.wixstatic.com/media/3fd644_b9ccc306c2ea43169b43971b04bc68ec~mv2.png/v1/fill/w_400,h_340,al_c,usm_0.66_1.00_0.01,enc_auto/slide-deck.png"
+                            alt="" class="img-fluid mb-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Effective & Efficient Learning Methods</h4>
+                        <p>Bay Valley Tech offers two learning programs: our Code Academy is a 7-month program
+                            administered free to students (with application approval) and we also offer an Accelerator
+                            Program for students who might be stuck learning on their own and require some professional
+                            guidance.</p>
+                        <p>Our programs are normally offered through in-person training at our Modesto location.
+                            However, due to the pandemic, we are also offering our coding programs online. </p>
+                    </div>
+                    <p class="mt-5">With our online coding and programming classes, students engage in web-based courses
+                        with tutors
+                        providing procedural learning over the internet. This type of learning is practical and
+                        essential in training our students and provides a community students require to be successful.
+                    </p>
+                    <h3 class="display-6 mb-5">Why Choose Bay Valley Tech As Your Free Code Camp?</h3>
+                    <p>As most coding schools require students to pay for coding training classes, we allow students to
+                        learn free and quickly with our coding academy. Skilled and experienced instructors offer free
+                        coding training to help students understand various concepts readily and with our excellent
+                        teaching techniques, our students graduate the program ready to pursue careers in the tech
+                        space.</p>
+                    <p>Some of the most recognized computer coding and programming careers include software application
+                        developer, web developer, computer systems engineer, database administrator, computer systems
+                        analyst, business intelligence analyst, and computer programmer.</p>
+                    <p>At Bay Valley Tech, students have a better chance of landing high-paying careers in the tech
+                        industry. With our free coding training and excellent teaching approaches, new programmers can
+                        enjoy learning while grasping different concepts seamlessly. Jumpstart your career today and
+                        apply to be part of our next cohort.</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary btn-lg text-black px-4 rounded-pill my-button">
+                        <h4>Apply Now</h4>
+                    </button>
+                </div>
+                <!-- CONTENT SECTION 3 END -->
+                <!-- BLACK PAGE BREAK START -->
+                <div class="bg-dark text-white text-center p-4" id="pageBreak">
+                    <h2 class="display-6">Bay Valley Co-Work</h2>
+                </div>
+                <!-- BLACK PAGE BREAK END -->
+                <!-- CONTENT SECTION 4 START -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><em>Modesto's Premium Entreneurial Office Space</em></h4>
+                        <p>Bay Valley Co-Work is conveniently located near many amazing restaurants and amenities in
+                            downtown Modesto (1325 H Street). Our co-working space offers private offices, co-working
+                            desks and conference rooms for your client meetings. Whether you are a startup entrepreneur,
+                            a remote employee or a fast-growing company needing a flexible office to support your needs,
+                            Bay Valley Co-Work is here to help. </p>
+                        <p>And as the host for most of the region’s tech community events such as hackathons, software
+                            meetups, gaming nights, business networking lunches and a large code academy program, Bay
+                            Valley Co-Work is the epicenter of Modesto’s tech community. Come connect with local techies
+                            and check out our office space.</p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <img src="/imgs/bvt_google_maps.jpg" alt="" class="img-fluid">
+                        <button type="button" class="btn btn-secondary btn-lg text-black px-4 rounded-pill my-button">
+                            <h4>Learn More</h4>
+                        </button>
+                    </div>
+                </div>
+                <!-- CONTENT SECTION 4 END -->
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
